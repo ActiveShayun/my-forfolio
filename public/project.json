@@ -1,0 +1,41 @@
+[
+    {
+        "category": "Adoption Pets",
+        "technologyStack": [
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ],
+        "description": "A platform to help users adopt pets. Browse through a variety of pets, view their details, and connect with shelters for adoption.",
+        "liveProjectLink": "https://i.ibb.co.com/GfcjMfqL/Screenshot-2025-02-05-040829.png",
+        "githubClientLink": "https://github.com/ActiveShayun"
+    },
+    {
+        "category": "Service Provide",
+        "technologyStack": [
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ],
+        "description": "A service marketplace for pet owners to find and book pet-related services like grooming, walking, and sitting.",
+        "liveProjectLink": "https://i.ibb.co.com/zVqjsrFb/Screenshot-2025-02-05-185446.png",
+        "githubClientLink": "https://github.com/ActiveShayun"
+    },
+    {
+        "category": "Gadget Store",
+        "technologyStack": [
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ],
+        "description": "An online store for pet gadgets and accessories. Browse and purchase smart collars, automatic feeders, pet cameras, and more.",
+        "liveProjectLink": "https://i.ibb.co.com/tM68XZ7C/Screenshot-2025-02-05-195611.png",
+        "githubClientLink": "https://github.com/ActiveShayun"
+    }
+]

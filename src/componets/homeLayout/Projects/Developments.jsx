@@ -20,9 +20,9 @@ const Developments = ({ p }) => {
 
     return (
         <div >
-            <div data-aos="zoom-in" className="w-full max-w-sm shadow-xl rounded-2xl overflow-hidden">
+            <div data-aos="zoom-in" className="w-full max-w-sm mx-auto shadow-xl rounded-2xl overflow-hidden">
                 <img
-                    src={p.liveProjectLink}
+                    src={p.demo}
                     alt="Project Name"
                     className="w-full h-48 object-cover"
                 />

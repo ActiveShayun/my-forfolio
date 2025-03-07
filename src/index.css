@@ -1,2 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&family=Sixtyfour+Convergence&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: italic;
+}
+
+.monomakh-regular {
+  font-family: "Monomakh", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-style: italic;
+}
+
+.playfair-display-name {
+   font-family: "Sixtyfour Convergence", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+
+/* animation related */
+/* কাস্টম CSS ক্লাস */
+.transform-style-preserve-3d {
+  transform-style: preserve-3d; /* 3D ট্রান্সফর্ম স্টাইল */
+}
+
+.perspective-800 {
+  perspective: 800px;
+  width: 120px;
+  height: 120px;
+}
+
+/* ফিক্সড প্রস্থের কন্টেইনার */
+.fixed-width-container {
+  width: 400px;
+}
+
+/* কিউবের সাইডগুলির স্টাইল */
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(100px);
+  background-color: rgba(255, 0, 0, 0.6); /* লাল */
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: rgba(0, 0, 255, 0.6); /* নীল */
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+  background-color: rgba(0, 255, 0, 0.6); /* সবুজ */
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: rgba(255, 255, 0, 0.6); /* হলুদ */
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: rgba(128, 0, 128, 0.6); /* বেগুনি */
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-color: rgba(255, 192, 203, 0.6); /* গোলাপি */
+}

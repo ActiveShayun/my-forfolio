@@ -9,8 +9,9 @@
             "MongoDB"
         ],
         "description": "A platform to help users adopt pets. Browse through a variety of pets, view their details, and connect with shelters for adoption.",
-        "liveProjectLink": "https://i.ibb.co.com/GfcjMfqL/Screenshot-2025-02-05-040829.png",
-        "githubClientLink": "https://github.com/ActiveShayun"
+        "liveProjectLink": "https://adoption-auth.web.app/",
+        "githubClientLink": "https://github.com/ActiveShayun/adoption-pets-clients",
+        "demo":"https://i.ibb.co.com/c5qtX9N/Screenshot-2025-02-05-040829.png"
     },
     {
         "category": "Service Provide",
@@ -22,8 +23,9 @@
             "MongoDB"
         ],
         "description": "A service marketplace for pet owners to find and book pet-related services like grooming, walking, and sitting.",
-        "liveProjectLink": "https://i.ibb.co.com/zVqjsrFb/Screenshot-2025-02-05-185446.png",
-        "githubClientLink": "https://github.com/ActiveShayun"
+        "liveProjectLink": "https://service-auth-4ebdb.web.app/",
+        "githubClientLink": "https://github.com/ActiveShayun/service-provider-clients",
+        "demo":"https://i.ibb.co.com/Cpr82Vp4/Screenshot-2025-02-05-185446.png"
     },
     {
         "category": "Gadget Store",
@@ -36,6 +38,7 @@
         ],
         "description": "An online store for pet gadgets and accessories. Browse and purchase smart collars, automatic feeders, pet cameras, and more.",
         "liveProjectLink": "https://i.ibb.co.com/tM68XZ7C/Screenshot-2025-02-05-195611.png",
-        "githubClientLink": "https://github.com/ActiveShayun"
+        "githubClientLink": "https://github.com/ActiveShayun/all-gedgets-project",
+        "demo": "https://i.ibb.co.com/tM68XZ7C/Screenshot-2025-02-05-195611.png"
     }
 ]

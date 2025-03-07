@@ -3,12 +3,10 @@ import SectionTitle from "../../shared/SectionTitle/SectionTitle";
 
 const AboutMeSection = () => {
     return (
-        <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+        <div 
             className="mt-10"
         >
-            <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+            <div class="max-w-4xl mx-auto p-6  shadow-lg rounded-lg">
                 <SectionTitle heading={'About Me'} />
                 <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">Hello, I'm Apu Roy</h2>
 
@@ -23,9 +21,9 @@ const AboutMeSection = () => {
                     </ul>
                 </div>
 
-                <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-3">My programming journey.</h2>
-                    <p>I have been interested in tech related work since my school life. After collage i am decided i will work in this sector. Then i started searching on the internet about the skill that are in demand in this sector. After scoring the internet i found that the demand for graphics design, wev development, and digital marketing in this sector is fairly good. Then i started exploring a bit. Then i realized i like coding more, Then i thought i should be a good programer. Then i started giving different tutorials on youtube. And later i do some courses thus my entry in to programming world.</p>
+                <div class="bg-[#2E0B2A] p-4 rounded-lg shadow-md mb-6">
+                    <h2 class="text-2xl font-semibold text-white mb-3">My programming journey.</h2>
+                    <p className="text-white">I have been interested in tech related work since my school life. After collage i am decided i will work in this sector. Then i started searching on the internet about the skill that are in demand in this sector. After scoring the internet i found that the demand for graphics design, wev development, and digital marketing in this sector is fairly good. Then i started exploring a bit. Then i realized i like coding more, Then i thought i should be a good programer. Then i started giving different tutorials on youtube. And later i do some courses thus my entry in to programming world.</p>
 
                     <div className="grid gap-3 grid-cols-1 lg:grid-cols-2 mt-6">
                         <div className="bg-white p-3 rounded-md">

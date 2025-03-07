@@ -1,6 +1,8 @@
 import React from 'react';
 import SectionTitle from '../componets/shared/SectionTitle/SectionTitle';
 import contactImg from '../assets/contact.png'
+import { MdAddCall, MdAttachEmail } from 'react-icons/md';
+import { IoLocationOutline } from 'react-icons/io5';
 
 const ContactSection = () => {
     return (
@@ -11,9 +13,26 @@ const ContactSection = () => {
                     <img src={contactImg} alt="" />
                     <h3 className='text-2xl font-bold rounded-md'>Mr : Apu Roy</h3>
                     <p>Have a project in mind or need a website? Feel free to reach out! Whether it’s a collaboration, inquiry, or just a friendly hello, I’d love to hear from you. Drop me a message, and let’s create something extraordinary together.</p>
-                    <div>
-                        <p>Email - mrapu@gmail.com</p>
-                        <p>Phone - 0190477345</p>
+                    <div className='flex items-center gap-8'>
+                        <p> <span className='flex items-center gap-3 font-medium'><MdAttachEmail />Email
+                        </span>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mrapuroy1609@gmail.com" target="_blank" >
+                                mrapu@gmail.com</a>
+                        </p>
+                        <p className='mt-3'><span className='flex items-center gap-3 font-medium'><MdAddCall />Phone</span>
+                            <a href="tel:+8801904773653">0190477345</a>
+                        </p>
+                    </div>
+                    <div class="shadow-md w-64">
+                        <p class="text-lg font-semibold">Apu Roy</p>
+                        <div>
+                            <p class="text-gray-600 flex items-center gap-3">
+                                <span className='text-xl'><IoLocationOutline /></span>
+                                BanglaDesh
+                            </p>
+                            <p class="text-gray-600">SreePur, Guzipur</p>
+                        </div>
+
                     </div>
 
                 </div>

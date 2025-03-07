@@ -27,7 +27,7 @@ const SkillSection = () => {
                 <SectionTitle heading={'Skill'}/>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div data-aos="zoom-in"
-                        className="p-4 border rounded-lg bg-gray-50 shadow-lg">
+                        className="p-4 border-b-2  rounded-lg bg-gray-50 shadow-lg">
                         <h3 className="font-semibold text-lg flex items-center gap-2">
                             Tailwind
                             <motion.span style={box}
@@ -43,7 +43,7 @@ const SkillSection = () => {
                         </div>
                     </div>
                     <div data-aos="zoom-in"
-                        className="p-4 border rounded-lg bg-gray-50 shadow-lg">
+                        className="p-4  border-b-2 rounded-lg bg-gray-50 shadow-lg">
                         <h3 className="font-semibold text-lg flex items-center gap-2">
                             Javascript
                             <motion.span style={box}
@@ -59,7 +59,7 @@ const SkillSection = () => {
                         </div>
                     </div>
                     <div data-aos="zoom-in"
-                        className="p-4 border rounded-lg bg-gray-50 shadow-lg">
+                        className="p-4 border-b-2 rounded-lg bg-gray-50 shadow-lg">
                         <h3 className="font-semibold text-lg flex items-center gap-2">
                             React
                             <motion.span style={box}
@@ -75,7 +75,7 @@ const SkillSection = () => {
                         </div>
                     </div>
                     <div data-aos="zoom-in"
-                        className="p-4 border rounded-lg bg-gray-50 shadow-lg">
+                        className="p-4  border-b-2 rounded-lg bg-gray-50 shadow-lg">
                         <h3 className="font-semibold text-lg flex items-center gap-2">
                             Node js
                             <motion.span style={box}
@@ -91,7 +91,7 @@ const SkillSection = () => {
                         </div>
                     </div>
                     <div data-aos="zoom-in"
-                        className="p-4 border rounded-lg bg-gray-50 shadow-lg">
+                        className="p-4 border-b-2  rounded-lg bg-gray-50 shadow-lg">
                         <h3 className="font-semibold text-lg  flex items-center gap-2">
                             Express js
                             <motion.span style={box}
@@ -107,7 +107,7 @@ const SkillSection = () => {
                         </div>
                     </div>
                     <div data-aos="zoom-in"
-                        className="p-4 border rounded-lg bg-gray-50 shadow-lg">
+                        className="p-4  border-b-2  rounded-lg bg-gray-50 shadow-lg">
                         <h3 className="font-semibold text-lg  flex items-center gap-2">
                             Mongodb
                             <motion.span style={box}

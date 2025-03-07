@@ -2,20 +2,15 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const link = <>
-        <NavLink className={({ IsActive }) => IsActive ?
-            'text-[#FF014F]' : 'font-semibold'}>Home</NavLink>
-        <NavLink className={({ IsActive }) => IsActive ?
-            'text-[#FF014F]' : 'font-semibold'}>Portfolio</NavLink>
-        <NavLink className={({ IsActive }) => IsActive ?
-            'text-[#FF014F]' : 'font-semibold'}>Resume</NavLink>
-        <NavLink className={({ IsActive }) => IsActive ?
-            'text-[#FF014F]' : 'font-semibold'}>blog</NavLink>
-        <NavLink className={({ IsActive }) => IsActive ?
-            'text-[#FF014F]' : 'font-semibold'}>Contact</NavLink>
+        <a className="font-bold" href="#banner">Home</a>
+        <a className="font-bold" href="#portfolio">Portfolio</a>
+        <a className="font-bold" href="#resume">Resume</a>
+        <a className="font-bold" href="#blog">Blog</a>
+        <a className="font-bold" href="#contact">Contact</a>
     </>
     return (
-        <div>
-            <div className="navbar bg-base-100 flex justify-between">
+        <div className="sticky top-0 z-[500] bg-[#2E0B2A] opacity-85 rounded-b-sm">
+            <div className="navbar flex justify-between max-w-7xl mx-auto text-white opacity-70">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,13 +27,13 @@ const Navbar = () => {
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul
+                        <ul data-aos="zoom-in"
                             tabIndex={0}
-                            className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[6666] mt-2 w-[450px] p-2 shadow text-black opacity-90">
                             {link}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Apu Roy</a>
+                    <a className="btn btn-ghost text-xl playfair-display">Apu Roy</a>
                 </div>
                 <div className="flex items-center justify-between gap-3">
                     <div className="navbar-center hidden lg:flex">
@@ -47,7 +42,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn">Hire Me</a>
+
+                        <button class="px-3 py-1 text-lg font-semibold text-white bg-white/20 border border-white/40 backdrop-blur-md rounded-xl shadow-lg transition-all hover:bg-white/30 hover:shadow-xl active:scale-95">
+                          Hire Me
+                        </button>
                     </div>
                 </div>
             </div>

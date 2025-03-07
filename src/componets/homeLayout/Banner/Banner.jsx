@@ -134,7 +134,7 @@ const Banner = () => {
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 5, repeat: Infinity }}
                                 className="flex justify-center  items-center rounded-sm">
-                                <a href="https://web.whatsapp.com/">
+                                <a href="">
                                     <IoLogoWhatsapp />
                                 </a>
                             </motion.span>

@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const link = <>
-        <a className="font-bold" href="#banner">Home</a>
-        <a className="font-bold" href="#portfolio">Portfolio</a>
-        <a className="font-bold" href="#resume">Resume</a>
-        <a className="font-bold" href="#blog">Blog</a>
-        <a className="font-bold" href="#contact">Contact</a>
+        <a className="font-semibold text-lg text-[#FAAD1B]" href="#banner">Home</a>
+        <a className="font-semibold text-lg text-[#FAAD1B]" href="#portfolio">Portfolio</a>
+        <a className="font-semibold text-lg text-[#FAAD1B]" href="#resume">Resume</a>
+        <a className="font-semibold text-lg text-[#FAAD1B]" href="#blog">Blog</a>
+        <a className="font-semibold text-lg text-[#FAAD1B]" href="#contact">Contact</a>
     </>
     return (
-        <div className="sticky top-0 z-[500] bg-[#2E0B2A] opacity-85 rounded-b-sm">
+        <div className="sticky top-8 z-[500] bg-[#344C36] rounded-4xl px-2">
             <div className="navbar flex justify-between max-w-7xl mx-auto text-white opacity-70">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -33,7 +33,12 @@ const Navbar = () => {
                             {link}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl playfair-display">Apu Roy</a>
+                    <div className="flex gap-2 items-center">
+                        <div className="flex items-center justify-center bg-[#FAAD1B] w-[35px] h-[35px] rounded-full">
+                            <span className="text-[#344C36] font-semibold text-xl">A</span>
+                        </div>
+                        <a className="text-xl playfair-display">Apu Roy</a>
+                    </div>
                 </div>
                 <div className="flex items-center justify-between gap-3">
                     <div className="navbar-center hidden lg:flex">
@@ -43,8 +48,9 @@ const Navbar = () => {
                     </div>
                     <div className="navbar-end">
 
-                        <button class="px-3 py-1 text-lg font-semibold text-white bg-white/20 border border-white/40 backdrop-blur-md rounded-xl shadow-lg transition-all hover:bg-white/30 hover:shadow-xl active:scale-95">
-                          Hire Me
+                        <button class="px-3 py-1 text-lg font-semibold  
+                        bg-[#FAAD1B] text-[#344C36] rounded-2xl">
+                            Hire Me
                         </button>
                     </div>
                 </div>

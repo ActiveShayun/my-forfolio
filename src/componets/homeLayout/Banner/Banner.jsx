@@ -59,7 +59,7 @@ const Banner = () => {
 
 
     return (
-        <div className="pt-10 bg-[url(./assets/heroBg.jpg)] w-full bg-cover md:h-[830px] lg:h-[550px] bg-center bg-fixed relative z-[222] rounded-md pb-2 md:pb-0">
+        <div className="pt-10 w-full bg-cover md:h-[830px] lg:h-[550px] bg-center bg-fixed relative z-[222] rounded-md pb-2 md:pb-0">
             <div id="banner" className="grid grid-cols-1 lg:grid-cols-2 mb-10 px-6">
                 {/* text introduction section*/}
                 <div>
@@ -100,7 +100,7 @@ const Banner = () => {
 
                             </div>
                         </div>
-                        <p className="mt-1 font-playfair text-white mt-2">Hello, I’m Apu Roy a passionate web developer dedicated to transforming ideas into engaging digital experiences. With expertise in modern front-end technologies and a keen eye for detail, I build responsive, user-friendly websites that not only look great but also perform seamlessly. I thrive on solving complex challenges and continuously learning new techniques to stay ahead in the fast-paced world of web development.</p>
+                        <p className="mt-1 font-playfair  mt-2">Hello, I’m Apu Roy a passionate web developer dedicated to transforming ideas into engaging digital experiences. With expertise in modern front-end technologies and a keen eye for detail, I build responsive, user-friendly websites that not only look great but also perform seamlessly. I thrive on solving complex challenges and continuously learning new techniques to stay ahead in the fast-paced world of web development.</p>
                     </div>
                     <div>
                         <h2
@@ -174,7 +174,7 @@ const Banner = () => {
                     </style>
                 </div>
             </div>
-            <div className="absolute top-0 left-0 bg-black opacity-60 w-full h-full -z-[10] rounded-md"></div>
+
         </div>
     );
 };

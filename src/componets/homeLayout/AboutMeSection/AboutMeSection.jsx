@@ -1,46 +1,81 @@
 import SectionTitle from "../../shared/SectionTitle/SectionTitle";
+import aboutPhoto from '../../../assets/aboutMe.jpg'
+import { FaArrowRightToBracket } from "react-icons/fa6";
 
 
 const AboutMeSection = () => {
     return (
-        <div 
-            className="mt-10"
+        <div
+            className="mt-22 bg-[#344C36] grid grid-cols-1 lg:grid-cols-2 items-center justify-center py-16 w-full rounded-xl"
         >
-            <div class="max-w-4xl mx-auto p-6  shadow-lg rounded-lg">
-                <SectionTitle heading={'About Me'} />
-                <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">Hello, I'm Apu Roy</h2>
-
-                <div class="text-lg text-gray-700 mb-6">
-                    <p class="mb-4">I'm a passionate  web developer specializing in building responsive, user-friendly web applications. With a focus on front-end and back-end development, I love creating dynamic solutions that deliver a seamless experience.</p>
-
-                    <p class="mb-4">Technologies I work with:</p>
-                    <ul class="list-disc pl-6">
-                        <li><strong>Front-End:</strong> React, Tailwind CSS</li>
-                        <li><strong>Back-End:</strong> Node.js, Express.js</li>
-                        <li><strong>Database:</strong> MongoDB</li>
-                    </ul>
+            <div className=" flex items-center justify-center">
+                <div className="relative text-center">
+                    <img
+                        className="w-[360px] h-[390px] mx-auto rounded-full object-cover"
+                        src={aboutPhoto} alt="" />
+                    <div className="absolute bottom-4 left-6">
+                        <div>
+                            <span className="bg-[#BF9023] py-1 px-2 rounded-3xl  border border-white mb-1 inline-block">UX/UI Design</span>
+                        </div>
+                        <div>
+                            <span className="bg-[#344C36] py-1 px-2 rounded-3xl border border-white rotate-6 inline-block text-white"
+                            >Mobile App Design</span>
+                            <span className="bg-[#BF9023] py-1 px-2 rounded-3xl  border border-white -rotate-6 inline-block ml-1"
+                            >Wevsite Design</span>
+                        </div>
+                        <div className="space-x-1 my-2">
+                            <span className="bg-[#BF9023] py-1 px-2 rounded-3xl border border-white rotate-6 inline-block"
+                            >Design System</span>
+                            <span className="bg-[#344C36] py-1 px-2 rounded-3xl  border border-white text-white"
+                            >Prototype</span>
+                            <span className="bg-[#344C36] py-1 px-2 rounded-3xl border border-white -rotate-10 inline-block text-white"
+                            >Dashboard</span>
+                        </div>
+                        <div>
+                            <span className="bg-[#BF9023] py-1 px-2 rounded-3xl  border border-white mt-1 inline-block"
+                            >Wireframe Design</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="bg-[#2E0B2A] p-4 rounded-lg shadow-md mb-6">
-                    <h2 class="text-2xl font-semibold text-white mb-3">My programming journey.</h2>
-                    <p className="text-white">I have been interested in tech related work since my school life. After collage i am decided i will work in this sector. Then i started searching on the internet about the skill that are in demand in this sector. After scoring the internet i found that the demand for graphics design, wev development, and digital marketing in this sector is fairly good. Then i started exploring a bit. Then i realized i like coding more, Then i thought i should be a good programer. Then i started giving different tutorials on youtube. And later i do some courses thus my entry in to programming world.</p>
-
-                    <div className="grid gap-3 grid-cols-1 lg:grid-cols-2 mt-6">
-                        <div className="bg-white p-3 rounded-md">
-                            <h2 class="text-2xl font-semibold text-gray-800 mt-3 mb-2">That's why i enjoy working in this sector.</h2>
-                            <p className="">I prefer to develop and design modern wev applications as this sector is on regular updates. So developers need to be updated all time . And then flame has to be emphasized. I like this very much. That's why i don’t find it boring to work in this sector.</p>
-                        </div>
-                        <div className="bg-white p-3 rounded-md">
-                            <h2 class="text-2xl font-semibold text-gray-800 mt-3 mb-2">interests outside of programming</h2>
-                            <p className="">I like many things outside of programming. Especially  sports i like to play football, cricket, badminton. Especially i play football very well. </p>
-                        </div>
-
+            </div>
+            <div class="shadow-lg text-left px-4">
+                <div>
+                    <h3 className="text-white text-3xl mb-4">- About Me</h3>
+                    <h4 class="text-left mb-4">
+                        <span className="text-white text-4xl font-bold">Who is</span>
+                        <span className="text-4xl ml-3 text-[#F6AB1C]">Apu Roy</span></h4>
+                    <p className="text-gray-200 pr-3">
+                        I'm a passionate web developer with experience in building responsive and user-friendly websites.
+                        I specialize in modern front-end technologies and clean, efficient code.
+                        Always eager to learn, I turn ideas into seamless digital experiences.
+                    </p>
+                </div>
+                <div className="flex items-center gap-8 mt-4">
+                    <div>
+                        <span className="text-[#F6AB1C] text-4xl">10+</span>
+                        <p className="text-gray-200 text-lg">Project Completed</p>
+                    </div>
+                    <div>
+                        <span className="text-[#F6AB1C] text-4xl">3+</span>
+                        <p className="text-gray-200 text-lg">Industry Covered</p>
+                    </div>
+                    <div>
+                        <span className="text-[#F6AB1C] text-4xl">000+</span>
+                        <p className="text-gray-200 text-lg">Years of Experience</p>
+                    </div>
+                </div>
+                <div className=" bg-[#BF9023] flex items-center gap-2 w-[210px] rounded-4xl mt-5 p-1">
+                    <div className="bg-[#344C36] rounded-4xl py-2 px-2">
+                        <h2
+                            className="text-xl font-semibold text-white">
+                            Download CV</h2>
+                    </div>
+                    <div className="flex items-center justify-center bg-white rounded-full p-1">
+                        <span className="text-xl">
+                            <FaArrowRightToBracket />
+                        </span>
                     </div>
 
-                </div>
-
-                <div class="text-lg text-gray-700">
-                    <p class="mb-4">I’m always looking to collaborate on new projects and continue learning from the community. Feel free to explore my work, and don’t hesitate to reach out!</p>
                 </div>
             </div>
 

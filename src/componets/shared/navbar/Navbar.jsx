@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import AddReview from "../ReviewModal/AddReview";
+import { useState } from "react";
 
 const Navbar = () => {
     const link = <>
@@ -7,7 +9,12 @@ const Navbar = () => {
         <a className="font-semibold text-lg text-[#FAAD1B]" href="#resume">Resume</a>
         <a className="font-semibold text-lg text-[#FAAD1B]" href="#blog">Blog</a>
         <a className="font-semibold text-lg text-[#FAAD1B]" href="#contact">Contact</a>
+        <button
+            className="font-semibold text-lg text-[#FAAD1B]"
+            onClick={() => setIsOpen(true)}>Add Feedback</button>
     </>
+
+    const [isOpen, setIsOpen] = useState(true)
     return (
         <div className="sticky top-8 z-[500] bg-[#344C36] rounded-4xl px-2">
             <div className="navbar flex justify-between max-w-7xl mx-auto text-white opacity-70">
@@ -55,6 +62,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <AddReview isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
     );
 };

@@ -1,70 +1,88 @@
-import React from 'react';
 import SectionTitle from '../componets/shared/SectionTitle/SectionTitle';
-import contactImg from '../assets/contact.png'
-import { MdAddCall, MdAttachEmail } from 'react-icons/md';
-import { IoLocationOutline } from 'react-icons/io5';
+import { MdAddIcCall } from "react-icons/md";
+import { MdMarkEmailRead } from "react-icons/md";
+import { SiWhatsapp } from "react-icons/si";
+import { CiLocationOn } from "react-icons/ci";
+import { IoMdArrowForward } from "react-icons/io";
 
 const ContactSection = () => {
     return (
         <div className='my-18'>
             <SectionTitle heading={'Reach Me Here'} />
             <div className='grid grid-cols-1 lg:grid-cols-2  gap-4 mt-8'>
-                <div className='space-y-2'>
-                    <img src={contactImg} alt="" />
-                    <h3 className='text-2xl font-bold rounded-md'>Mr : Apu Roy</h3>
-                    <p>Have a project in mind or need a website? Feel free to reach out! Whether it’s a collaboration, inquiry, or just a friendly hello, I’d love to hear from you. Drop me a message, and let’s create something extraordinary together.</p>
-                    <div className='flex items-center gap-8'>
-                        <p> <span className='flex items-center gap-3 font-medium'><MdAttachEmail />Email
-                        </span>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mrapuroy1609@gmail.com" target="_blank" >
-                                mrapu@gmail.com</a>
-                        </p>
-                        <p className='mt-3'><span className='flex items-center gap-3 font-medium'><MdAddCall />Phone</span>
-                            <a href="tel:+8801904773653">0190477345</a>
-                        </p>
+                <div>
+                    <h5 className='text-lg mb-2'>- Contact Us</h5>
+                    <div>
+                        <span className='text-4xl font-semibold'>
+                            Let's Tall for</span> <span className='text-[#FAAD1B] text-4xl'>Your</span>
+                        <h6 className='text-[#FAAD1B] text-4xl font-semibold mt-1 mb-4'>Next Project</h6>
                     </div>
-                    <div class="shadow-md w-64">
-                        <p class="text-lg font-semibold">Apu Roy</p>
-                        <div>
-                            <p class="text-gray-600 flex items-center gap-3">
-                                <span className='text-xl'><IoLocationOutline /></span>
-                                BanglaDesh
-                            </p>
-                            <p class="text-gray-600">SreePur, Guzipur</p>
-                        </div>
-
+                    <p>Get in touch with us! Whether you have a question, feedback, or need assistance, we're here to help. Fill out the form below, and our team will get back to you as soon as possible.</p>
+                    <div className='flex items-center gap-2 mb-3.5 mt-3.5'>
+                        <span className='bg-[#FAAD1B]  rounded-full w-[40px] 
+                        h-[40px]  flex items-center justify-center p-1 text-lg'><MdAddIcCall /></span>
+                        <span className='text-lg tracking-[2px]'>
+                            +8801904773653</span>
                     </div>
-
+                    <div className='flex items-center gap-2 mb-3.5'>
+                        <span className='bg-[#FAAD1B]  rounded-full w-[40px] 
+                        h-[40px]  flex items-center justify-center p-1 text-lg'><MdMarkEmailRead /></span>
+                        <span className='text-lg tracking-[2px]'>
+                            mrapuroy1609@gmail.com</span>
+                    </div>
+                    <div className='flex items-center gap-2 mb-3.5'>
+                        <span className='bg-[#FAAD1B]  rounded-full w-[40px] 
+                        h-[40px]  flex items-center justify-center p-1 text-lg'><SiWhatsapp /></span>
+                        <span className='text-lg tracking-[2px]'>
+                            +8801904773653</span>
+                    </div>
+                    <div className='flex items-center gap-2 mb-3.5'>
+                        <span className='bg-[#FAAD1B]  rounded-full w-[40px] 
+                        h-[40px]  flex items-center justify-center p-1 text-lg'><CiLocationOn /></span>
+                        <span className='text-lg tracking-[2px]'>
+                            Sreepur, Guzipur</span>
+                    </div>
                 </div>
 
-                <div className='bg-[#E4EAED] p-7 rounded-md'>
+                <div className='p-7 rounded-md'>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                         <label htmlFor="">
-                            <span className='block font-medium mb-2'>Name</span>
-                            <input type="text" placeholder="Type here name" className="input input-bordered w-full rounded-md " />
+                            <span className='block font-medium mb-2'>Your Name*</span>
+                            <input type="text" placeholder="EX john Doe" className="input input-bordered w-full rounded-md bg-[#F5F5F5]" />
                         </label>
                         <label htmlFor="">
-                            <span className='block font-medium mb-2'>Phone</span>
-                            <input type="text" placeholder="Type here phone" className="input input-bordered w-full rounded-md" />
+                            <span className='block font-medium mb-2'>Y&our Phone*</span>
+                            <input type="text" placeholder="Enter your phon number" className="input input-bordered w-full rounded-md bg-[#F5F5F5]" />
                         </label>
                     </div>
                     <div className='mt-4'>
                         <label htmlFor="" className='mb-3'>
-                            <span className='block font-medium mb-2'>Email</span>
-                            <input type="text" placeholder="Type here email" className="input input-bordered w-full rounded-md mb-2" />
+                            <span className='block font-medium mb-2'>Your Email*</span>
+                            <input type="text" placeholder="example@gmail.com" className="input input-bordered w-full rounded-md mb-2 bg-[#F5F5F5]" />
                         </label>
                         <label className='mb-3' htmlFor="">
-                            <span className='block font-medium my-2'>Subject</span>
-                            <input type="text" placeholder="Type here subject" className="input input-bordered w-full rounded-md mb-2" />
+                            <span className='block font-medium my-2'>Subject*</span>
+                            <input type="text" placeholder="Type here subject" className="input input-bordered w-full rounded-md mb-2 bg-[#F5F5F5]" />
                         </label>
                     </div>
                     <div>
                         <label htmlFor="">
-                            <span className='block font-medium my-2'>Your Massage</span>
-                            <textarea className="textarea textarea-secondary w-full mb-2" placeholder="type here message"></textarea>
+                            <span className='block font-medium my-2'>Your Massage*</span>
+                            <textarea className="textarea w-full mb-2 bg-[#F5F5F5]" placeholder="type here message"></textarea>
                         </label>
                     </div>
-                    <button className='px-5 py-1 rounded-md block mx-auto bg-[#FF0088] w-full mt-6 font-semibold text-white'>Send Me</button>
+                    <button type='submit' className="cursor-pointer bg-[#BF9023] flex items-center gap-2 w-[145px] rounded-4xl my-4">
+                        <span className="bg-[#344C36] rounded-4xl py-2 px-4">
+                            <span
+                                className="text-xl font-semibold text-white">Submit</span>
+                        </span>
+                        <span className="flex items-center justify-center bg-white rounded-full p-1">
+                            <span className="text-xl">
+                                <IoMdArrowForward />
+                            </span>
+                        </span>
+
+                    </button>
                 </div>
 
             </div>

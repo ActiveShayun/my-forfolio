@@ -3,8 +3,9 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import heroImg from '../../../assets/hero.png'
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import heroVideo from '../../../assets/heroVideo.mp4'
+import coverBanner from '../../../assets/coverbnner.webp'
 import ThreeDAnimatin from "../../Animation/ThreeDAnimatin";
+import { IoMdPlay } from "react-icons/io";
 
 const Banner = () => {
     const [currentRole, setCurrentRole] = useState("Frontend - Developer");
@@ -20,7 +21,7 @@ const Banner = () => {
     const box = {
         width: 30,
         height: 30,
-        backgroundColor: "#ff0088",
+        backgroundColor: "#BF9023",
         borderRadius: 5,
     }
 
@@ -62,14 +63,24 @@ const Banner = () => {
         <div className="pt-10 w-full bg-cover md:h-[830px] lg:h-[550px] bg-center bg-fixed relative z-[222] rounded-md pb-2 md:pb-0">
             <div id="banner" className="grid grid-cols-1 lg:grid-cols-2 mb-10 px-6">
                 {/* text introduction section*/}
-                <div>
+                <div className="mt-6">
                     <div>
-                        <h2 className="leading-4 text-3xl font-bold mb-4 playfair-display text-white">Welcome to my world</h2>
-                        <div className="xl:flex items-center gap-4 z-[600] ">
-                            <h2
-                                className=" font-semibold monomakh-regular text-white mt-2 md:mt-4 lg:mt-0 inline-block">
-                                Hi, I’m
-                                <span className="playfair-display-name"> Apu Roy a</span></h2>
+                        <div className="items-center gap-4 z-[600] ">
+                            {/* start */}
+                            <div>
+                                <div className="flex items-center justify-center border-2 border-[#747574] px-3 py-1 w-[170px] mb-3">
+                                    <h2 className="text-xl">Hello There</h2>
+                                </div>
+
+                                <div>
+                                    <h3>
+                                        <span className="text-4xl font-bold">
+                                            I,m</span>
+                                        <span className="text-3xl text-[#FAAD1B]
+                                    border-b-2 border-[#FAAD1B] ml-2">Apu Roy</span> </h3>
+                                </div>
+                            </div>
+                            {/* end */}
                             <div style={{ fontSize: "2em", }}>
                                 <AnimatePresence mode="wait">
                                     <motion.div
@@ -84,7 +95,7 @@ const Banner = () => {
                                             <motion.span
                                                 key={index}
                                                 variants={letterVariants}
-                                                style={{ display: "inline-block", color: '#FF0088' }}
+                                                style={{ display: "inline-block", color: '#3F403F', fontSize: '36px', fontWeight: '700' }}
                                             >
                                                 {char}
                                             </motion.span>
@@ -100,18 +111,25 @@ const Banner = () => {
 
                             </div>
                         </div>
-                        <p className="mt-1 font-playfair  mt-2">Hello, I’m Apu Roy a passionate web developer dedicated to transforming ideas into engaging digital experiences. With expertise in modern front-end technologies and a keen eye for detail, I build responsive, user-friendly websites that not only look great but also perform seamlessly. I thrive on solving complex challenges and continuously learning new techniques to stay ahead in the fast-paced world of web development.</p>
+                        <p className="font-playfair text-[#311c1c]  mt-2">Hello, I’m Apu Roy a passionate web developer dedicated to transforming ideas into engaging digital experiences. With expertise in modern front-end technologies and a keen eye for detail, I build responsive, user-friendly websites that not only look great but also perform seamlessly. I thrive on solving complex challenges and continuously learning new techniques to stay ahead in the fast-paced world of web development.</p>
                     </div>
                     <div>
-                        <h2
-                            className="text-2xl font-semibold my-4 text-[#FF014F]">Contact With Me</h2>
+                        <div className=" bg-[#BF9023] flex items-center gap-2 w-[210px] rounded-4xl my-4">
+                            <div className="bg-[#344C36] rounded-4xl py-2 px-2">
+                                <h2
+                                    className="text-xl font-semibold text-white">Contact With Me</h2>
+                            </div>
+                            <div className="flex items-center justify-center bg-white rounded-full p-1">
+                                <span className="text-xl"><IoMdPlay /></span>
+                            </div>
 
+                        </div>
                         <div className="flex items-center gap-4">
                             <motion.span
                                 style={box}
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 5, repeat: Infinity }}
-                                className="flex justify-center  items-center rounded-sm">
+                                className="flex justify-center  items-center rounded-sm bg-neutral-700">
                                 <a href="https://www.facebook.com/profile.php?id=100074605937724">
                                     <FaFacebookF />
                                 </a>
@@ -139,7 +157,7 @@ const Banner = () => {
                                 </a>
                             </motion.span>
                             <div >
-                                <a className="btn hover:bg-[#FF014F] transition hover:text-white">Download Resume</a>
+                                <a className="btn hover:bg-[#BF9023] transition hover:text-white">Download Resume</a>
                             </div>
                         </div>
                         <ThreeDAnimatin />
@@ -148,8 +166,15 @@ const Banner = () => {
                 {/* image section */}
                 <div className="flex items-center justify-center">
                     <div className="relative flex items-center justify-center">
-                        <div className=" h-[400px] border border-red-600 flex items-center justify-center rounded-md  mt-8 lg:mt-0">
-                            <img className="mx-auto h-full object-cover" src={heroImg} alt="" />
+                        <div className="flex items-center justify-center rounded-md  mt-8 lg:mt-0 ">
+                            <div className="relative">
+                                <div className="absolute top-0 w-full h-full -z-10">
+                                    <img src={coverBanner} alt="" />
+                                </div>
+                                <div>
+                                    <img className="mx-auto h-[500px] object-cover" src={heroImg} alt="" />
+                                </div>
+                            </div>
                         </div>
                         {logos.map((logo, index) => (
                             <div
@@ -157,7 +182,10 @@ const Banner = () => {
                                 className={`absolute w-[50px] h-8 rounded-full flex items-center justify-center text-white text-sm mr-4 font-bold orbit orbit-${index}`}
                                 style={{ animationDelay: `${index * 0.5}s` }}
                             >
-                                <img className="w-[30px] h-[40px] rounded-full object-cover" src={logo?.img} alt="" />
+                                <div>
+
+                                    <img className="w-[30px] h-[40px] rounded-full object-cover" src={logo?.img} alt="" />
+                                </div>
                             </div>
                         ))}
                     </div>

@@ -14,9 +14,9 @@ const Navbar = () => {
             onClick={() => setIsOpen(true)}>Add Feedback</button>
     </>
 
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className="sticky top-8 z-[500] bg-[#344C36] rounded-4xl px-2">
+        <div className="mt-4 z-[500] bg-[#344C36] rounded-4xl px-2">
             <div className="navbar flex justify-between max-w-7xl mx-auto text-white opacity-70">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -56,8 +56,8 @@ const Navbar = () => {
                     <div className="navbar-end">
 
                         <button class="px-3 py-1 text-lg font-semibold  
-                        bg-[#FAAD1B] text-[#344C36] rounded-2xl">
-                            Hire Me
+                        border-4 border-white text-white rounded-2xl">
+                       <a href="" download>Hire Me</a>
                         </button>
                     </div>
                 </div>

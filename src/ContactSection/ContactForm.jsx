@@ -27,7 +27,7 @@ const ContactForm = () => {
             }
         } catch (err) {
             console.log('email not sent', err);
-            toast.error('Email sent unsuccessful')
+            // toast.error('Email sent unsuccessful')
         }
     }
     return (

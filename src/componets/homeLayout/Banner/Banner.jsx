@@ -157,7 +157,10 @@ const Banner = () => {
                                 </a>
                             </motion.span>
                             <div >
-                                <a className="btn hover:bg-[#BF9023] transition hover:text-white">Download Resume</a>
+                                <a className="btn hover:bg-[#BF9023] transition hover:text-white"
+                                    href="https://drive.google.com/uc?export=download&id=1S0b2hkskRdLksToXjZH7AQE8WYj1Zj1u"
+                                    download>
+                                    Download Resume</a>
                             </div>
                         </div>
                         <ThreeDAnimatin />

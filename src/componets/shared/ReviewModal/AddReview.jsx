@@ -55,7 +55,7 @@ const AddReview = ({ isOpen, setIsOpen }) => {
     return (
         <>
             <Dialog open={isOpen} onClose={() => setIsOpen(false)}
-                className="relative z-[5000]">
+                className="relative z-[999000]">
                 <div className="fixed inset-0 flex w-screen items-center justify-center">
                     <DialogPanel className="max-w-lg
                     bg-[#E4EAED] px-12 py-3 rounded-xl">
@@ -150,8 +150,9 @@ const AddReview = ({ isOpen, setIsOpen }) => {
 
                             </div>
                         </div>
-                        <div className="flex gap-4">
-                            <button onClick={() => setIsOpen(false)}>Deactivate</button>
+                        <div className="flex gap-4 cursor-pointer">
+                            <button className="cursor-pointer"
+                            onClick={() => setIsOpen(false)}>Deactivate</button>
                         </div>
                     </DialogPanel>
                 </div>

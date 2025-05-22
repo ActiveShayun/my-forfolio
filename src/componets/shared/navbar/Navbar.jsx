@@ -4,20 +4,20 @@ import { useState } from "react";
 
 const Navbar = () => {
     const link = <>
-        <a className="font-semibold text-lg text-[#FAAD1B]" href="#banner">Home</a>
-        <a className="font-semibold text-lg text-[#FAAD1B]" href="#portfolio">Portfolio</a>
-        <a className="font-semibold text-lg text-[#FAAD1B]" href="#resume">Resume</a>
-        <a className="font-semibold text-lg text-[#FAAD1B]" href="#blog">Blog</a>
-        <a className="font-semibold text-lg text-[#FAAD1B]" href="#contact">Contact</a>
+        <a className="font-semibold text-[16px] lg:text-[#FAAD1B]" href="#banner">Home</a>
+        <a className="font-semibold text-[16px] lg:text-[#FAAD1B]" href="#portfolio">Portfolio</a>
+        <a className="font-semibold text-[16px] lg:text-[#FAAD1B]" href="#resume">Resume</a>
+        <a className="font-semibold text-[16px] lg:text-[#FAAD1B]" href="#blog">Blog</a>
+        <a className="font-semibold text-[16px] lg:text-[#FAAD1B]" href="#contact">Contact</a>
         <button
-            className="font-semibold text-lg text-[#FAAD1B]"
+            className="font-semibold text-[16px] lg:text-[#FAAD1B] cursor-pointer"
             onClick={() => setIsOpen(true)}>Add Feedback</button>
     </>
 
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className="mt-4 z-[500] bg-[#344C36] rounded-4xl px-2">
-            <div className="navbar flex justify-between max-w-7xl mx-auto text-white opacity-70">
+        <div className="mt-4 z-[99990] bg-[#344C36] rounded-4xl lg:px-2 flex items-center justify-between sticky top-4">
+            <div className="navbar flex justify-between max-w-7xl mx-auto text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = () => {
                         </div>
                         <ul data-aos="zoom-in"
                             tabIndex={0}
-                            className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[6666] mt-2 w-[450px] p-2 shadow text-black opacity-90">
+                            className="menu menu-sm dropdown-content bg-[#faad1b] text-black rounded-box z-[999] mt-2 w-[450px] p-2 shadow">
                             {link}
                         </ul>
                     </div>
@@ -48,15 +48,14 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-between gap-3">
-                    <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1 flex gap-2 items-center">
+                    <div className="navbar-center hidden lg:flex z-[700]">
+                        <ul className="menu menu-horizontal px-1 flex gap-2 items-center z-[9900]">
                             {link}
                         </ul>
                     </div>
-                    <div className="navbar-end">
-
+                    <div className="navbar-end w-[200px] lg:w-full">
                         <button class="px-3 py-1 text-lg font-semibold  
-                        border-4 border-white text-white rounded-2xl">
+                        lg:border-4 border lg:border-white text-white rounded-2xl ">
                        <a href="" download>Hire Me</a>
                         </button>
                     </div>

@@ -9,7 +9,7 @@ import ContactForm from './ContactForm';
 const ContactSection = () => {
  
     return (
-        <div className='my-18'>
+        <div className='my-18' id='contact'>
             <SectionTitle heading={'Reach Me Here'} />
             <div className='grid grid-cols-1 lg:grid-cols-2  gap-4 mt-8'>
                 <div>
